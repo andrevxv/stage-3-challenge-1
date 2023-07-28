@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --navy-blue: #535971;
+  --light-red: #ff5374;
+  --whitesmoke: #efefef;
+}
+body {
+  background: var(--whitesmoke);
+  padding-top: 140px;
+
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  margin: auto;
+}
+h1 {
+  font-family: "Staatliches", sans-serif;
+  font-size: 48px;
+  color: #fff;
+}
+p {
+  font-size: 20px;
+
+  margin-top: 18px;
+  margin-bottom: 58px;
+  color: #fff;
+}
+body::before {
+  content: "";
+  background: var(--navy-blue);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  height: 436px;
+  width: 100%;
+}
+.page {
+  width: 750px;
+  background: #fff;
+
+  border-radius: 20px 20px 0 0;
+
+  padding: 64px;
+  margin: auto;
+}
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  margin-bottom: 30px;
+}
+legend {
+  font-family: "Staatliches", sans-serif;
+  color: #535971;
+  font-size: 24px;
+  line-height: 34px;
+
+  border-bottom: 1px solid var(--whitesmoke);
+
+  width: 100%;
+  margin-bottom: 36px;
+  padding-bottom: 8px;
+}
+.name-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+.fieldset-wrapper label {
+  display: flex;
+  margin-bottom: 8px;
+
+  color: #4e4958;
+  font-size: 14px;
+
+  line-height: 24px;
+
+  align-items: center;
+}
+.fieldset-wrapper label span {
+  color: #c1bccc;
+  font-family: Poppins;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 9px;
+}
+.fieldset-wrapper label span:hover {
+  color: #76737d;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  color: #c1bccc;
+
+  padding: 0 20px 0;
+
+  width: 100%;
+  height: 56px;
+
+  border-radius: 8px;
+
+  border: 1px solid #e6e6f0;
+  background: #fafafc;
+}
+input:invalid {
+  border: 1px solid red;
+}
+.three-cols {
+  display: flex;
+  gap: 10px;
+}
+.three-cols div {
+  width: 140px;
+}
+.three-cols div:first-of-type {
+  width: 300px;
+  margin-right: 22px;
+}
+h2 {
+  color: #535971;
+  font-family: "Staatliches", sans-serif;
+  font-size: 20px;
+  line-height: 34px;
+}
+.submit {
+  display: flex;
+  align-items: center;
+
+  background-color: var(--navy-blue);
+  width: 750px;
+  height: 160px;
+  margin: 0 auto 366px;
+
+  border-radius: 0 0 20px 20px;
+}
+.submit input {
+  width: 608px;
+  height: 55.652px;
+  padding: 15px 40px;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+
+  border: none;
+  border-radius: 20px;
+  background: #ff5374;
+
+  color: #fff;
+  font-family: "Staatliches", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+}
